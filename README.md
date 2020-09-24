@@ -2,7 +2,7 @@
 
 ---
 
-<p align="center">[live demo](https://lyrics-app-by-dipen.netlify.app/)</p>
+<p align="center"><a href="https://lyrics-app-by-dipen.netlify.app/" target="_blank">live demo</a></p>
 
 <p align="center">
     <img src="https://i.imgur.com/ccp13IT.png?1" />
