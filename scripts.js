@@ -40,7 +40,7 @@ function findLyrics(inputKeyWord) {
     .catch((error) => {
       hideLoader();
       console.log(error);
-      showError('Sorry, No for interal error');
+      showError('Sorry for internal error');
     });
 }
 
@@ -72,7 +72,7 @@ function callLyrics(artist, title) {
     .catch((error) => {
       hideLoader();
       console.log(error);
-      showError('Sorry, No for interal error');
+      showError('Sorry for internal error');
     });
 }
 function showErrorBlockOutSideLyricsBlock() {
