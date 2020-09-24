@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Lyrics Finder</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://use.fontawesome.com/289e919a94.js"></script>
+  <body>
+    <div class="loader">
+      <div class="centered">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        <div>Loading...</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="inner-container">
+        <h1 class="app-title secondary" id="title">Lyrics App</h1>
+        <form action="index.html" method="post" class="form-input">
+          <input
+            type="text"
+            placeholder="Search for lyrics by artist name or album"
+            name="lyrics"
+          />
+          <span class="search-button">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </span>
+        </form>
+        <div class="results">
+          <div class="error">
+            <span class="not-found-icon">
+              <i class="fa fa-frown-o" aria-hidden="true"></i>
+            </span>
+            <span class="not-found-text"></span>
+          </div>
+          <div class="pagination-block">
+            <ul></ul>
+            <div class="button-group">
+              <button
+                id="button_prev"
+                class="button button--lyrics button--inverted"
+              >
+                Prev
+              </button>
+              <button
+                id="button_next"
+                class="button button--lyrics button--inverted"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="lyricBlock">
+            <div class="lyrics-title"></div>
+            <div class="lyrics-text" id="lyrics-text"></div>
+            <div class="button-group-lyrics">
+              <button
+                id="back-to-list"
+                class="button button--lyrics button--inverted"
+              >
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                Back
+              </button>
+              <button
+                id="copy-button"
+                class="button button--lyrics button--inverted"
+              >
+                Copy
+                <i class="fa fa-files-o" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="scripts.js"></script>
+</html>
